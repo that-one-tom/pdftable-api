@@ -11,4 +11,12 @@ I wanted to play around with Docker a bit and figured this would be a good first
 
 ## Usage
 Send the file in a multipart form POST request to the `/upload` endpoint using the field name `file`:
-![Screenshot](/img/screenshot.png)
+![Insomnia Screenshot](/img/screenshot.png)
+
+## Use Case
+I am currently using this in my [n8n](https://n8n.io/) environment to read and parse numeric data published by my local county council (who themselves don't provide data through easily machine-readable files or an API but upload PDF files generated using Microsoft Word).
+
+My n8n workflow first stores new PDFs it finds, uploads them to this REST API and then transforms and stores the extracted data:
+![n8n Screenshot](/img/n8n.png)
+
+There are a couple of commercial solutions providing a REST API for this particular data parsing job too. However, I found they either aren't a good fit for n8n environments because they don't work synchronously or are too expensive.
