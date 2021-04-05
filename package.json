@@ -2,7 +2,7 @@
     "name": "pdftable-api",
     "version": "0.0.1",
     "description": "A simple REST API accepting PDF files and returning table data as JSON",
-    "author": "that-one-tim",
+    "author": "that-one-tom",
     "main": "app.js",
     "scripts": {
       "start": "node app.js"
