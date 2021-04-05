@@ -1,7 +1,6 @@
 FROM node:14
 WORKDIR /usr/src/app
-COPY package.json ./
-RUN npm install
 COPY . .
+RUN npm install && mkdir uploads
 EXPOSE 8080
-CMD [ "node", "app.js" ]
+CMD ["node", "app.js"]
