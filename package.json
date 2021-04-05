@@ -5,10 +5,14 @@
     "author": "that-one-tom",
     "main": "app.js",
     "scripts": {
-      "start": "node app.js"
+        "start": "node app.js"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://v8.googlecode.com/svn/trunk/"
+    },
+    "license": "Apache-2.0",
     "dependencies": {
-      "express": "^4.17.1"
+        "express": "^4.17.1"
     }
-  }
-  
+}
