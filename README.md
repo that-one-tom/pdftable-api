@@ -11,6 +11,7 @@ I wanted to play around with Docker a bit and figured this would be a good first
 
 ## Usage
 Send the file in a multipart form POST request to the `/upload` endpoint using the field name `file`:
+
 ![Insomnia Screenshot](/img/screenshot.png)
 
 ## Use Case
